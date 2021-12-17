@@ -9,14 +9,17 @@ const Home = ({ navigation }) => {
 			<View style={styles.bannerContainer}>
 				<Image
 					source={{
-						uri: "https://image.freepik.com/free-vector/flat-people-asking-questions-illustration_23-2148910626.jpg",
+						uri: "https://image.freepik.com/free-vector/quiz-background-with-items-flat-design_23-2147599082.jpg",
 					}}
 					style={styles.banner}
 					resizeMode="contain"
 				/>
 			</View>
-			<TouchableOpacity onPress={() => navigation.navigate("Quiz")}>
-				<Text>start</Text>
+			<TouchableOpacity
+				onPress={() => navigation.navigate("Quiz")}
+				style={styles.button}
+			>
+				<Text style={styles.buttonText}>start</Text>
 			</TouchableOpacity>
 		</View>
 	);
@@ -28,8 +31,7 @@ const styles = StyleSheet.create({
 	container: {
 		paddingTop: 35,
 		paddingHorizontal: 15,
-		// backgroundColor: "#000",
-		// color: "#fff",
+		backgroundColor: "#fff",
 		height: "100%",
 	},
 	banner: {
@@ -39,6 +41,27 @@ const styles = StyleSheet.create({
 	bannerContainer: {
 		justifyContent: "center",
 		alignItems: "center",
+		flex: 1,
+	},
+	button: {
+		backgroundColor: "#2888CC",
+		marginLeft: "auto",
+		marginRight: "auto",
+		marginTop: 30,
+		width: "50%",
+		paddingTop: 10,
+		paddingBottom: 10,
+		paddingRight: 20,
+		paddingLeft: 20,
+		borderRadius: 15,
+		fontWeight: "600",
+		marginBottom: 30,
+	},
+	buttonText: {
+		color: "#ffffff",
+		textAlign: "center",
+		fontSize: 24,
+		textTransform: "uppercase",
 	},
 	// textLight: {
 	// 	color: '#fff'

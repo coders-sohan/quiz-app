@@ -29,7 +29,9 @@ export default Result;
 
 const styles = StyleSheet.create({
 	container: {
-		padding: 12,
+		paddingTop: 35,
+		paddingHorizontal: 15,
+		backgroundColor: "#fff",
 		height: "100%",
 	},
 	banner: {
